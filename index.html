@@ -34,6 +34,17 @@
 </head>
 
 <body>
+    <script>
+        const password = "Aa123456"; // 设置你的密码
+
+        const enteredPassword = prompt("请输入密码：");
+
+        if (enteredPassword !== password) {
+            alert("密码错误，无法访问。");
+            document.body.innerHTML = ""; // 清空页面内容
+        }
+    </script>
+    
     <div class="w-full h-full bg-gray-800 absolute flex flex-row justify-center items-center">
         <div class="bg-gray-300 m-auto shadow-lg p-5 rounded w-1/4 h-auto mwh">
             <div class="flex flex-col justify-start w-full h-full items-center">
